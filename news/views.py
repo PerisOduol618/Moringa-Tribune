@@ -15,6 +15,7 @@ def news_of_day(request):
 def past_days_news(request,past_date):
     
     try:
+        
         # Converts data from the string Url
         date = dt.datetime.strptime(past_date,'%Y-%m-%d').date()
     except ValueError:
